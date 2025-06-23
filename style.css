@@ -8,8 +8,8 @@
 
 body {
     display: grid;
-    grid-template-rows: 1fr 6fr;
-    grid-template-columns: 200px max(100%, 600px);
+    grid-template-rows: 145px max(100%, 600px);
+    grid-template-columns: 250px max(100%, 600px);
 }
 
 p {
@@ -27,7 +27,8 @@ li {
 
 .sidebar {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 2fr;
+    align-items: start;
+    grid-template-rows: 75px 250px max(100%, 300px);
 
     grid-column-start: 1;
     grid-column-end: 2;
@@ -43,10 +44,21 @@ li {
     color: white;
 }
 
-.sidebar-list > ul > li > img {
-    width: 25px;
+.sidebar > .logo > img {
+    width: 35px;
     height: auto;
-    margin-right: 15px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.sidebar-list > ul > li {
+    margin-bottom: 15px;
+}
+
+.sidebar-list > ul > li > img {
+    width: 20px;
+    height: auto;
+    margin-right: 20px;
     /* Align text and image */
     vertical-align: bottom;
 }
